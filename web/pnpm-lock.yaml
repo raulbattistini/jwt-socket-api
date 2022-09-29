@@ -1,4 +1,4 @@
-lockfileVersion: 5.4
+lockfileVersion: 5.3
 
 specifiers:
   '@emotion/react': ^11.10.4
@@ -6,7 +6,6 @@ specifiers:
   '@mui/material': ^5.10.7
   '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
-  '@types/socket.io-client': ^3.0.0
   '@vitejs/plugin-react': ^2.1.0
   autoprefixer: ^10.4.12
   formik: ^2.2.9
@@ -15,7 +14,6 @@ specifiers:
   react-dom: ^18.2.0
   react-icons: ^4.4.0
   react-router-dom: ^6.4.1
-  socket.io: ^4.5.2
   socket.io-client: ^4.5.2
   socketio: ^1.0.0
   tailwindcss: ^3.1.8
@@ -24,15 +22,14 @@ specifiers:
   yup: ^0.32.11
 
 dependencies:
-  '@emotion/react': 11.10.4_iapumuv4e6jcjznwuxpf4tt22e
-  '@emotion/styled': 11.10.4_g3tud4ene45llglqap74b5kkse
-  '@mui/material': 5.10.7_ikcgkdnp4bn3rgptamntbhbo7e
+  '@emotion/react': 11.10.4_401f4652bc279224e5b6a5de5e4e7ad1
+  '@emotion/styled': 11.10.4_36e741f08d273ab5997003ffc0f54a91
+  '@mui/material': 5.10.7_4284650dafe05bb899f3031b309c2ef9
   formik: 2.2.9_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.4.0_react@18.2.0
-  react-router-dom: 6.4.1_biqbaboplfbrettd7655fr4n2y
-  socket.io: 4.5.2
+  react-router-dom: 6.4.1_react-dom@18.2.0+react@18.2.0
   socket.io-client: 4.5.2
   socketio: 1.0.0
   yup: 0.32.11
@@ -40,11 +37,10 @@ dependencies:
 devDependencies:
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
-  '@types/socket.io-client': 3.0.0
   '@vitejs/plugin-react': 2.1.0_vite@3.1.4
   autoprefixer: 10.4.12_postcss@8.4.16
   postcss: 8.4.16
-  tailwindcss: 3.1.8_postcss@8.4.16
+  tailwindcss: 3.1.8
   typescript: 4.8.4
   vite: 3.1.4
 
@@ -369,7 +365,7 @@ packages:
     resolution: {integrity: sha512-G/YwXTkv7Den9mXDO7AhLWkE3q+I92B+VqAE+dYG4NGPaHZGvt3G8Q0p9vmE+sq7rTGphUbAvmQ9YpbfMQGGlA==}
     dev: false
 
-  /@emotion/react/11.10.4_iapumuv4e6jcjznwuxpf4tt22e:
+  /@emotion/react/11.10.4_401f4652bc279224e5b6a5de5e4e7ad1:
     resolution: {integrity: sha512-j0AkMpr6BL8gldJZ6XQsQ8DnS9TxEQu1R+OGmDZiWjBAJtCcbt0tS3I/YffoqHXxH6MjgI7KdMbYKw3MEiU9eA==}
     peerDependencies:
       '@babel/core': ^7.0.0
@@ -407,7 +403,7 @@ packages:
     resolution: {integrity: sha512-OiTkRgpxescko+M51tZsMq7Puu/KP55wMT8BgpcXVG2hqXc0Vo0mfymJ/Uj24Hp0i083ji/o0aLddh08UEjq8w==}
     dev: false
 
-  /@emotion/styled/11.10.4_g3tud4ene45llglqap74b5kkse:
+  /@emotion/styled/11.10.4_36e741f08d273ab5997003ffc0f54a91:
     resolution: {integrity: sha512-pRl4R8Ez3UXvOPfc2bzIoV8u9P97UedgHS4FPX594ntwEuAMA114wlaHvOK24HB48uqfXiGlYIZYCxVJ1R1ttQ==}
     peerDependencies:
       '@babel/core': ^7.0.0
@@ -423,7 +419,7 @@ packages:
       '@babel/runtime': 7.19.0
       '@emotion/babel-plugin': 11.10.2
       '@emotion/is-prop-valid': 1.2.0
-      '@emotion/react': 11.10.4_iapumuv4e6jcjznwuxpf4tt22e
+      '@emotion/react': 11.10.4_401f4652bc279224e5b6a5de5e4e7ad1
       '@emotion/serialize': 1.1.0
       '@emotion/use-insertion-effect-with-fallbacks': 1.0.0_react@18.2.0
       '@emotion/utils': 1.2.0
@@ -507,7 +503,7 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@mui/base/5.0.0-alpha.99_rj7ozvcq3uehdlnj3cbwzbi5ce:
+  /@mui/base/5.0.0-alpha.99_8a7eecd450dd0871ada9d8836c851d11:
     resolution: {integrity: sha512-D04H6O1c0Jv561yI0SVbpa8MpqpW3G43CwJxV2o6ALfI0DMJ45w07dGafmDchb6aCWTRTdggd3rjgmuzyNwPiQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -535,7 +531,7 @@ packages:
     resolution: {integrity: sha512-3N0UYVy3MbrHzM3j6f7fIUCZ+bQ1/sSZq143tLxwSssW3Z4AqE83brpr5flEY1Lx+Aowv/cPyQMmZxzRlFCGqw==}
     dev: false
 
-  /@mui/material/5.10.7_ikcgkdnp4bn3rgptamntbhbo7e:
+  /@mui/material/5.10.7_4284650dafe05bb899f3031b309c2ef9:
     resolution: {integrity: sha512-o1jcQGii+q7ORrXhBiMmGzFDaboc1qTgOOC3zDW+NR9ryVzWzL7qEeqoORbgDB5zk9OBsXCjB91fUH/ls5xMwg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -553,11 +549,11 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.19.0
-      '@emotion/react': 11.10.4_iapumuv4e6jcjznwuxpf4tt22e
-      '@emotion/styled': 11.10.4_g3tud4ene45llglqap74b5kkse
-      '@mui/base': 5.0.0-alpha.99_rj7ozvcq3uehdlnj3cbwzbi5ce
+      '@emotion/react': 11.10.4_401f4652bc279224e5b6a5de5e4e7ad1
+      '@emotion/styled': 11.10.4_36e741f08d273ab5997003ffc0f54a91
+      '@mui/base': 5.0.0-alpha.99_8a7eecd450dd0871ada9d8836c851d11
       '@mui/core-downloads-tracker': 5.10.7
-      '@mui/system': 5.10.7_h33l6npc22g7vcra72cibfsrvm
+      '@mui/system': 5.10.7_3ef6bf35e2d68dfa8a20fe84809651ab
       '@mui/types': 7.2.0_@types+react@18.0.21
       '@mui/utils': 5.10.6_react@18.2.0
       '@types/react': 18.0.21
@@ -568,10 +564,10 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-is: 18.2.0
-      react-transition-group: 4.4.5_biqbaboplfbrettd7655fr4n2y
+      react-transition-group: 4.4.5_react-dom@18.2.0+react@18.2.0
     dev: false
 
-  /@mui/private-theming/5.10.6_iapumuv4e6jcjznwuxpf4tt22e:
+  /@mui/private-theming/5.10.6_401f4652bc279224e5b6a5de5e4e7ad1:
     resolution: {integrity: sha512-I/W0QyTLRdEx6py3lKAquKO/rNF/7j+nIOM/xCyI9kU0fcotVTcTY08mKMsS6vrzdWpi6pAkD0wP0KwWy5R5VA==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -588,7 +584,7 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@mui/styled-engine/5.10.7_hfzxdiydbrbhhfpkwuv3jhvwmq:
+  /@mui/styled-engine/5.10.7_397371a3030c427395eab52bb49eb664:
     resolution: {integrity: sha512-CCrtW+vvCKEm6pOE/QcutQ+ORC/iE6D1ghscN4l7LE2JXPvTXO/z0yu8Wxug1JEDlWm4r1Qa0PzJe1P9bjKzNA==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -603,14 +599,14 @@ packages:
     dependencies:
       '@babel/runtime': 7.19.0
       '@emotion/cache': 11.10.3
-      '@emotion/react': 11.10.4_iapumuv4e6jcjznwuxpf4tt22e
-      '@emotion/styled': 11.10.4_g3tud4ene45llglqap74b5kkse
+      '@emotion/react': 11.10.4_401f4652bc279224e5b6a5de5e4e7ad1
+      '@emotion/styled': 11.10.4_36e741f08d273ab5997003ffc0f54a91
       csstype: 3.1.1
       prop-types: 15.8.1
       react: 18.2.0
     dev: false
 
-  /@mui/system/5.10.7_h33l6npc22g7vcra72cibfsrvm:
+  /@mui/system/5.10.7_3ef6bf35e2d68dfa8a20fe84809651ab:
     resolution: {integrity: sha512-kwyhjjKGsgtBRFl6vSqidDZcNKU5S1juTgm4Xi2fyWxaEbIQb9Sh9y0iVP2bNCJzgDr0alLaENOZOEaDWHISAQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -627,10 +623,10 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.19.0
-      '@emotion/react': 11.10.4_iapumuv4e6jcjznwuxpf4tt22e
-      '@emotion/styled': 11.10.4_g3tud4ene45llglqap74b5kkse
-      '@mui/private-theming': 5.10.6_iapumuv4e6jcjznwuxpf4tt22e
-      '@mui/styled-engine': 5.10.7_hfzxdiydbrbhhfpkwuv3jhvwmq
+      '@emotion/react': 11.10.4_401f4652bc279224e5b6a5de5e4e7ad1
+      '@emotion/styled': 11.10.4_36e741f08d273ab5997003ffc0f54a91
+      '@mui/private-theming': 5.10.6_401f4652bc279224e5b6a5de5e4e7ad1
+      '@mui/styled-engine': 5.10.7_397371a3030c427395eab52bb49eb664
       '@mui/types': 7.2.0_@types+react@18.0.21
       '@mui/utils': 5.10.6_react@18.2.0
       '@types/react': 18.0.21
@@ -697,21 +693,10 @@ packages:
 
   /@socket.io/component-emitter/3.1.0:
     resolution: {integrity: sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==}
-
-  /@types/cookie/0.4.1:
-    resolution: {integrity: sha512-XW/Aa8APYr6jSVVA1y/DEIZX0/GMKLEVekNG727R8cs56ahETkRAy/3DR7+fJyh7oUgGwNQaRfXCun0+KbWY7Q==}
-    dev: false
-
-  /@types/cors/2.8.12:
-    resolution: {integrity: sha512-vt+kDhq/M2ayberEtJcIN/hxXy1Pk+59g2FV/ZQceeaTyCtCucjL2Q7FXlFjtWn4n15KCr1NE2lNNFhp0lEThw==}
     dev: false
 
   /@types/lodash/4.14.186:
     resolution: {integrity: sha512-eHcVlLXP0c2FlMPm56ITode2AgLMSa6aJ05JTTbYbI+7EMkCEE5qk2E41d5g2lCVTqRe0GnnRFurmlCsDODrPw==}
-    dev: false
-
-  /@types/node/18.7.23:
-    resolution: {integrity: sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==}
     dev: false
 
   /@types/parse-json/4.0.0:
@@ -748,17 +733,6 @@ packages:
 
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
-
-  /@types/socket.io-client/3.0.0:
-    resolution: {integrity: sha512-s+IPvFoEIjKA3RdJz/Z2dGR4gLgysKi8owcnrVwNjgvc01Lk68LJDDsG2GRqegFITcxmvCMYM7bhMpwEMlHmDg==}
-    deprecated: This is a stub types definition. socket.io-client provides its own type definitions, so you do not need this installed.
-    dependencies:
-      socket.io-client: 4.5.2
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
-    dev: true
 
   /@vitejs/plugin-react/2.1.0_vite@3.1.4:
     resolution: {integrity: sha512-am6rPyyU3LzUYne3Gd9oj9c4Rzbq5hQnuGXSMT6Gujq45Il/+bunwq3lrB7wghLkiF45ygMwft37vgJ/NE8IAA==}
@@ -882,11 +856,6 @@ packages:
     engines: {node: '>= 0.4.0'}
     dev: false
 
-  /base64id/2.0.0:
-    resolution: {integrity: sha512-lGe34o6EHj9y3Kts9R4ZYs/Gr+6N7MCaMlIFA3F1R2O5/m7K06AxfSeO5530PEERE6/WyEg3lsuyw4GHlPZHog==}
-    engines: {node: ^4.5.0 || >= 5.9}
-    dev: false
-
   /better-assert/1.0.2:
     resolution: {integrity: sha512-bYeph2DFlpK1XmGs6fvlLRUN29QISM3GBuUwSFsMY2XRx4AvC0WNCS57j4c/xGrK2RS24C1w3YoBOsw9fT46tQ==}
     dependencies:
@@ -918,8 +887,6 @@ packages:
       raw-body: 2.5.1
       type-is: 1.6.18
       unpipe: 1.0.0
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /braces/3.0.2:
@@ -1052,22 +1019,9 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /cookie/0.4.2:
-    resolution: {integrity: sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA==}
-    engines: {node: '>= 0.6'}
-    dev: false
-
   /cookie/0.5.0:
     resolution: {integrity: sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==}
     engines: {node: '>= 0.6'}
-    dev: false
-
-  /cors/2.8.5:
-    resolution: {integrity: sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g==}
-    engines: {node: '>= 0.10'}
-    dependencies:
-      object-assign: 4.1.1
-      vary: 1.1.2
     dev: false
 
   /cosmiconfig/7.0.1:
@@ -1092,33 +1046,18 @@ packages:
 
   /debug/2.2.0:
     resolution: {integrity: sha512-X0rGvJcskG1c3TgSCPqHJ0XJgwlcvOC7elJ5Y0hYuKBZoVqWpAMfLOeIh2UI/DCQ5ruodIjvsugZtjUYUw2pUw==}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
     dependencies:
       ms: 0.7.1
     dev: false
 
   /debug/2.3.3:
     resolution: {integrity: sha512-dCHp4G+F11zb+RtEu7BE2U8R32AYmM/4bljQfut8LipH3PdwsVBVGh083MXvtKkB7HSQUzSwiXz53c4mzJvYfw==}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
     dependencies:
       ms: 0.7.2
     dev: false
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
     dependencies:
       ms: 2.0.0
     dev: false
@@ -1206,10 +1145,6 @@ packages:
       ws: 1.1.5
       xmlhttprequest-ssl: 1.6.3
       yeast: 0.1.2
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
     dev: false
 
   /engine.io-client/6.2.2:
@@ -1224,6 +1159,7 @@ packages:
       - bufferutil
       - supports-color
       - utf-8-validate
+    dev: false
 
   /engine.io-parser/1.3.2:
     resolution: {integrity: sha512-3UyTJo+5Jbmr7rd3MosTAApK7BOIo4sjx8dJYSHa3Em5R3A9Y2s9GWu4JFJe6Px0VieJC0hKUA5NBytC+O7k2A==}
@@ -1239,6 +1175,7 @@ packages:
   /engine.io-parser/5.0.4:
     resolution: {integrity: sha512-+nVFp+5z1E3HcToEnO7ZIj3g+3k9389DvWtvJZz0T6/eOCPIyyxehFcedoYrZQrp0LgQbD9pPXhpMBKMd5QURg==}
     engines: {node: '>=10.0.0'}
+    dev: false
 
   /engine.io/1.8.5:
     resolution: {integrity: sha512-j1DWIcktw4hRwrv6nWx++5nFH2X64x16MAG2P0Lmi5Dvdfi3I+Jhc7JKJIdAmDJa+5aZ/imHV7dWRPy2Cqjh3A==}
@@ -1249,30 +1186,6 @@ packages:
       debug: 2.3.3
       engine.io-parser: 1.3.2
       ws: 1.1.5
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
-    dev: false
-
-  /engine.io/6.2.0:
-    resolution: {integrity: sha512-4KzwW3F3bk+KlzSOY57fj/Jx6LyRQ1nbcyIadehl+AnXjKT7gDO0ORdRi/84ixvMKTym6ZKuxvbzN62HDDU1Lg==}
-    engines: {node: '>=10.0.0'}
-    dependencies:
-      '@types/cookie': 0.4.1
-      '@types/cors': 2.8.12
-      '@types/node': 18.7.23
-      accepts: 1.3.8
-      base64id: 2.0.0
-      cookie: 0.4.2
-      cors: 2.8.5
-      debug: 4.3.4
-      engine.io-parser: 5.0.4
-      ws: 8.2.3
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
     dev: false
 
   /error-ex/1.3.2:
@@ -1549,8 +1462,6 @@ packages:
       type-is: 1.6.18
       utils-merge: 1.0.1
       vary: 1.1.2
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /fast-glob/3.2.12:
@@ -1588,8 +1499,6 @@ packages:
       parseurl: 1.3.3
       statuses: 2.0.1
       unpipe: 1.0.0
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /find-root/1.1.0:
@@ -2189,7 +2098,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-router-dom/6.4.1_biqbaboplfbrettd7655fr4n2y:
+  /react-router-dom/6.4.1_react-dom@18.2.0+react@18.2.0:
     resolution: {integrity: sha512-MY7NJCrGNVJtGp8ODMOBHu20UaIkmwD2V3YsAOUQoCXFk7Ppdwf55RdcGyrSj+ycSL9Uiwrb3gTLYSnzcRoXww==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2212,7 +2121,7 @@ packages:
       react: 18.2.0
     dev: false
 
-  /react-transition-group/4.4.5_biqbaboplfbrettd7655fr4n2y:
+  /react-transition-group/4.4.5_react-dom@18.2.0+react@18.2.0:
     resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
     peerDependencies:
       react: '>=16.6.0'
@@ -2321,8 +2230,6 @@ packages:
       on-finished: 2.4.1
       range-parser: 1.2.1
       statuses: 2.0.1
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /serve-static/1.15.0:
@@ -2333,8 +2240,6 @@ packages:
       escape-html: 1.0.3
       parseurl: 1.3.3
       send: 0.18.0
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /setprototypeof/1.2.0:
@@ -2354,12 +2259,6 @@ packages:
     dependencies:
       debug: 2.3.3
       socket.io-parser: 2.3.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
-  /socket.io-adapter/2.4.0:
-    resolution: {integrity: sha512-W4N+o69rkMEGVuk2D/cvca3uYsvGlMwsySWV447y99gUPghxq42BxqLNMndb+a1mm/5/7NeXVQS7RLa2XyXvYg==}
     dev: false
 
   /socket.io-client/1.7.4:
@@ -2376,10 +2275,6 @@ packages:
       parseuri: 0.0.5
       socket.io-parser: 2.3.1
       to-array: 0.1.4
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
     dev: false
 
   /socket.io-client/4.5.2:
@@ -2394,6 +2289,7 @@ packages:
       - bufferutil
       - supports-color
       - utf-8-validate
+    dev: false
 
   /socket.io-parser/2.3.1:
     resolution: {integrity: sha512-j6l4g/+yWQjmy1yByzg1DPFL4vxQw+NwCJatIxni/AE1wfm17FBtIKSWU4Ay+onrJwDxmC4eK4QS/04ZsqYwZQ==}
@@ -2402,8 +2298,6 @@ packages:
       debug: 2.2.0
       isarray: 0.0.1
       json3: 3.3.2
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /socket.io-parser/4.2.1:
@@ -2414,6 +2308,7 @@ packages:
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
+    dev: false
 
   /socket.io/1.7.4:
     resolution: {integrity: sha512-rKMY/U7gBmbHjwrljcPHy+uEXZ5973WvO2DrooL643w1R24SZVzsmhvNmJFjYVhAL4y7wrZJJS/znUfp0VWfKw==}
@@ -2425,26 +2320,6 @@ packages:
       socket.io-adapter: 0.5.0
       socket.io-client: 1.7.4
       socket.io-parser: 2.3.1
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
-    dev: false
-
-  /socket.io/4.5.2:
-    resolution: {integrity: sha512-6fCnk4ARMPZN448+SQcnn1u8OHUC72puJcNtSgg2xS34Cu7br1gQ09YKkO1PFfDn/wyUE9ZgMAwosJed003+NQ==}
-    engines: {node: '>=10.0.0'}
-    dependencies:
-      accepts: 1.3.8
-      base64id: 2.0.0
-      debug: 4.3.4
-      engine.io: 6.2.0
-      socket.io-adapter: 2.4.0
-      socket.io-parser: 4.2.1
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
     dev: false
 
   /socketio/1.0.0:
@@ -2452,10 +2327,6 @@ packages:
     dependencies:
       express: 4.18.1
       socket.io: 1.7.4
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
     dev: false
 
   /source-map-js/1.0.2:
@@ -2491,12 +2362,10 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /tailwindcss/3.1.8_postcss@8.4.16:
+  /tailwindcss/3.1.8:
     resolution: {integrity: sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g==}
     engines: {node: '>=12.13.0'}
     hasBin: true
-    peerDependencies:
-      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
@@ -2633,14 +2502,6 @@ packages:
 
   /ws/1.1.5:
     resolution: {integrity: sha512-o3KqipXNUdS7wpQzBHSe180lBGO60SoK0yVo3CYJgb2MkobuWuBX6dhkYP5ORCLd55y+SaflMOV5fqAB53ux4w==}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: ^5.0.2
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
     dependencies:
       options: 0.0.6
       ultron: 1.0.2
@@ -2657,6 +2518,7 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
+    dev: false
 
   /wtf-8/1.0.0:
     resolution: {integrity: sha512-qfR6ovmRRMxNHgUNYI9LRdVofApe/eYrv4ggNOvvCP+pPdEo9Ym93QN4jUceGD6PignBbp2zAzgoE7GibAdq2A==}
@@ -2670,6 +2532,7 @@ packages:
   /xmlhttprequest-ssl/2.0.0:
     resolution: {integrity: sha512-QKxVRxiRACQcVuQEYFsI1hhkrMlrXHPegbbd1yn9UHOmRxY+si12nQYzri3vbzt8VdTTRviqcKxcyllFas5z2A==}
     engines: {node: '>=0.4.0'}
+    dev: false
 
   /xtend/4.0.2:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
