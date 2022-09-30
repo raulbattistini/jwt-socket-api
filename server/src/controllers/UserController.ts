@@ -5,12 +5,10 @@ import { User } from "../models/User";
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import { passwordCompareSync } from "../helpers/passwordCompare";
-
-
-export var userRepo = connection.getRepository(User);
+import { userRepo } from "../repositories";
 
 export class UserController {
-  public async create(req: Request, res: Response, next: NextFunction) {
+  public static async create(req: Request, res: Response, next: NextFunction) {
     try {
       const { id, username, password, createdAt } = req.body;
 
@@ -43,7 +41,7 @@ export class UserController {
     }
   }
 
-  public async getAll(req: Request, res: Response, next: NextFunction) {
+  public static async getAll(req: Request, res: Response, next: NextFunction) {
     try {
       const all = await userRepo.find({
         order: {
@@ -57,7 +55,7 @@ export class UserController {
     }
   }
 
-  public async getById(req: Request, res: Response, next: NextFunction) {
+  public static async getById(req: Request, res: Response, next: NextFunction) {
     try {
       const user = await userRepo.findOne({
         where: {
@@ -76,7 +74,7 @@ export class UserController {
     }
   }
 
-  public async update(req: Request, res: Response, next: NextFunction) {
+  public static async update(req: Request, res: Response, next: NextFunction) {
     try {
       const { username, password, createdAt } = req.body;
 
@@ -109,7 +107,7 @@ export class UserController {
     }
   }
 
-  public async deleteById(
+  public static async deleteById(
     req: Request,
     res: Response,
     next: NextFunction
@@ -134,7 +132,7 @@ export class UserController {
     }
   }
 
-  public async deleteAll(
+  public static async deleteAll(
     req: Request,
     res: Response,
     next: NextFunction
@@ -164,7 +162,7 @@ export class UserController {
       return next(error);
     }
   }
-  public async login(req: Request, res: Response, next: NextFunction){
+  public static async login(req: Request, res: Response, next: NextFunction){
     const {username, password} = req.body;
 
     const user = await userRepo.findOne({
