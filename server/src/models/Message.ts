@@ -25,7 +25,7 @@ export class Message {
    @ManyToOne(()=> User)
    user: User
 
-   @Column()
+   @Column({type: 'char', length: 36})
    user_id: string
 
    @CreateDateColumn()

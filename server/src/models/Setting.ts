@@ -11,10 +11,10 @@ export class Setting {
    @PrimaryGeneratedColumn('uuid')
    id: string;
 
-   @Column()
+   @Column("varchar")
    username: string;
 
-   @Column()
+   @Column('boolean')
    chat: boolean
 
    @UpdateDateColumn()

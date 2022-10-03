@@ -15,17 +15,17 @@ export class Connection {
   @PrimaryGeneratedColumn("uuid")
   id: string;
 
-  @Column()
+  @Column({type: 'char', length: 36})
   admin_id: string;
 
-  @Column()
+  @Column({type: 'char', length: 36})
   socket_id: string;
 
   @JoinColumn({ name: "user_id" })
   @ManyToOne(() => User)
   user: User;
 
-  @Column()
+  @Column({type: 'char', length: 36})
   user_id: string;
 
   @CreateDateColumn()
