@@ -4,20 +4,20 @@ import { Connection } from "../models/Connection";
 import { connectionsRepo } from "../repositories";
 
 export class ConnectionsService {
-  public static async create(req: Request, res: Response, next: NextFunction) {
-    const { id, admin_id, socket_id, user_id } =
-      req.body as unknown as Connection;
+  public static async create(socket_id?: string, user_id?: string, req?: Request, res?: Response, next?: NextFunction) {
+    const { id, admin_id } =
+      req!.body as unknown as Connection;
     try {
       const connection = connectionsRepo.create({
-        socket_id: socket_id,
-        user_id: user_id,
+        socket_id,
+        user_id,
         admin_id: admin_id,
         id: id,
       });
       try {
         await connectionsRepo.save(connection);
 
-        return res.status(201).json({
+        return res!.status(201).json({
           message: `Connection saved with info: ${connection}`,
         });
       } catch (error: any) {
@@ -25,8 +25,8 @@ export class ConnectionsService {
           `An error occurred while saving the connection: ${error.message}`
         );
       }
-    } catch (error) {
-      return next(error);
+    } catch (error: any) {
+      throw new Error(`Something wrong occurred: ${error.message}`);
     }
   }
 
@@ -53,11 +53,13 @@ export class ConnectionsService {
   }
 
   public static async updateAdminId(
-    req: Request,
-    res: Response,
-    next: NextFunction
+    user_id: string,
+    socked_id: string,
+    req?: Request,
+    res?: Response,
+    next?: NextFunction
   ) {
-    const { admin_id } = req.body;
+    const { admin_id } = req!.body;
     try {
       await connectionsRepo
         .createQueryBuilder()
@@ -66,8 +68,8 @@ export class ConnectionsService {
           admin_id: admin_id,
         })
         .execute();
-    } catch (error) {
-      return next(error);
+    } catch (error: any) {
+      throw new Error(`Something wrong occurred: ${error.message}`);
     }
   }
 
@@ -106,6 +108,29 @@ export class ConnectionsService {
       return connections;
     } catch (error) {
       return next(error);
+    }
+  }
+
+  public static async findByUserId(
+    req?: Request,
+    res?: Response,
+    next?: NextFunction,
+    user_id?: string
+  ) {
+    try {
+      const connection = await connectionsRepo.findOne({
+        where: {
+          user_id,
+        },
+      });
+
+      if (!user_id)
+        return res!
+          .status(404)
+          .json({ message: `No user with such id ${user_id}` });
+      return res!.status(200).json({ message: `User ${user_id}` });
+    } catch (error: any) {
+      throw new Error(`An error occurred: ${error.message}`);
     }
   }
 }

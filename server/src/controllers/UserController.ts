@@ -55,22 +55,22 @@ export class UserController {
     }
   }
 
-  public static async getById(req: Request, res: Response, next: NextFunction) {
+  public static async getById(req?: Request, res?: Response, next?: NextFunction, email?: string) {
     try {
       const user = await userRepo.findOne({
         where: {
-          id: req.params.id,
+          id: req!.params.id,
         },
       });
 
       if (!user)
-        return res.status(404).json({
-          message: `Sorry, there was no user with id ${req.params.id}`,
+        return res!.status(404).json({
+          message: `Sorry, there was no user with id ${req!.params.id}`,
         });
 
-      return res.json(user);
+      return res!.json(user);
     } catch (error: any) {
-      return next(error);
+      throw new Error(`Something wrong occurred: ${error.message}`);
     }
   }
 

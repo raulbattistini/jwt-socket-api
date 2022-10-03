@@ -51,6 +51,29 @@ export class MessagesController {
       return next(error);
     }
   }
+
+  public static async create(admin_id?: string | any, text?: string, req?: Request, res?: Response, next?: NextFunction){
+    try {
+      const { admin_id, text, user_id } = req!.body;
+
+      const message = await messagesRepo.create({
+        admin_id,
+        text, 
+        user_id
+      })
+
+      if(!req!.body) return res!.status(204).json({
+        message: "Invalid body"
+      })
+      await messagesRepo.save(message);
+
+      return res!.status(201).json({
+        message: `New message with info: ${message}`
+      })
+    } catch (error: any) {
+      throw new Error(`Something wrong occurred: ${error.message}`);
+    }
+  }
 }
 
 //todo: refactore the code
